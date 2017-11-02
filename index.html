@@ -150,7 +150,7 @@
 
 <body>
   <!--百度地图容器-->
-  <div style="position:relative;width:100%;height:40vw;border:#ccc solid 1px;" id="dituContent"></div>
+  <div style="position:relative;width:100%;height:50vw;border:#ccc solid 1px;" id="dituContent"></div>
 </body>
 
 <script type="text/javascript">
@@ -184,7 +184,7 @@
 	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_SMALL});
 	map.addControl(ctrl_nav);
         //向地图中添加缩略图控件
-	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:0});
 	map.addControl(ctrl_ove);
         //向地图中添加比例尺控件
 	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
