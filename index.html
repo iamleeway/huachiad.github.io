@@ -139,31 +139,7 @@
                         <div class="heading clearfix">
                             <h2>公司地址</h2>
                         </div>
-                        <div id="xxx">
-                            <img src="images/address_map.jpg" style="max-width:100%;">
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <div class="container topCon">
-                <div class="heading">
-                    <h2>联系我们</h2>
-                </div>
-            </div>
-        </section>
-        <section class="contactDetails">
-            <div class="container">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 refBox">
-                    <h4>联系方式</h4>
-                    <p> <a>电话：(0512)62726188</a></p>
-                    <p> <a>手机：13862160396</a></p>
-                    <p> <i class="icon icon-link"></i><a href="http://j.map.baidu.com/YSQTN">地址：苏州胜浦新胜路金雅苑 2 幢 107</a>
-                    </p>
-                </div>
 <!--引用百度地图API-->
 <style type="text/css">
     html,body{margin:0;padding:0;}
@@ -174,8 +150,9 @@
 
 <body>
   <!--百度地图容器-->
-  <div style="position:relative;width:697px;height:430px;border:#ccc solid 1px;" id="dituContent"></div>
+  <div style="position:relative;width:100%;height:40vw;border:#ccc solid 1px;" id="dituContent"></div>
 </body>
+
 <script type="text/javascript">
     //创建和初始化地图函数：
     function initMap(){
@@ -196,7 +173,7 @@
     //地图事件设置函数：
     function setMapEvent(){
         map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
-        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        // map.enableScrollWheelZoom();//启用地图滚轮放大缩小
         map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
         map.enableKeyboard();//启用键盘上下左右键移动地图
     }
@@ -273,7 +250,27 @@
 
     initMap();//创建和初始化地图
 </script>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="contact" id="contact">
+            <div class="container topCon">
+                <div class="heading">
+                    <h2>联系我们</h2>
+                </div>
+            </div>
+        </section>
+        <section class="contactDetails">
+            <div class="container">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 refBox">
+                    <h4>联系方式</h4>
+                    <p> <a>电话：(0512)62726188</a></p>
+                    <p> <a>手机：13862160396</a></p>
+                    <p> <i class="icon icon-link"></i><a href="http://j.map.baidu.com/YSQTN">地址：苏州胜浦新胜路金雅苑 2 幢 107</a>
+                    </p>
+                </div>
             </div>
         </section>
 
